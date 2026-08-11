@@ -38,7 +38,9 @@ export default function Page() {
         setLoading(false);
     }
 };
-
+ useEffect(() => {
+    handleSearch("Tboli");
+ },[]);
    
     const handleAddFavCity = (city: string) => {
         if (!city.trim() || favorites.includes(city)) return;
